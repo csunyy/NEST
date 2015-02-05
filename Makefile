@@ -4,7 +4,7 @@ SRC_DIR = ./src
 INC_DIR = ./include
 TEST_DIR = ./test
 
-all: test_example libnest.a
+all: libnest.a test_example 
 
 libnest.a:
 	make -C $(SRC_DIR) $@
