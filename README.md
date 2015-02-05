@@ -7,7 +7,7 @@ NEST supports constant-scale hashing scheme with two salient features, i.e., loc
 Documentation
 -------------
 
-Documentation on how to use the NEST can be found in the doc/manual.pdf file.
+Documentation on how to use the NEST can be found in the `doc/manual.pdf` file.
 
 More information and the design details can be found in the following paper:
 

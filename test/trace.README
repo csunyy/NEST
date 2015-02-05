@@ -1,0 +1,31 @@
+﻿programs to generate trace file
+
+1、generate random strings：string_generator
+source file:string_generator.c
+usage：./string_generator  ./string_generator num  filename  max_len  min_len
+
+num：number of strings
+
+filename: trace file name，default naming rule is trace_num_maxlen_minlen.txt，eg：./string_generator 10000 trace_1w_20_10.txt 20 10          
+
+max_len: maxinum len of string
+
+min_len: minium len of string
+
+
+2、generate random multidimensional vectors：vectors_generator
+source file：vectors_generator.c lsh.c
+compile：gcc vectors_generator.c lsh.c -lm -o vectors_generator
+usage：./vectors_generator dimension max_value points_num trace_file S|R 
+：
+
+dimension: the dimension of vector
+
+max_value: maxium value of vector's element, must be positive
+
+points_num: number of vectors
+
+S|R: S: generate vectors that include some similar vectors, R: complete random vectors
+
+trace_file: trace file name，default naming rule is:trace_num_dimension_maxvalue_S|R, eg：
+	./vectors_generator 5 100 100000 trace_1w_5d_100_S.txt S
